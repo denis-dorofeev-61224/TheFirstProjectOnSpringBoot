@@ -79,4 +79,10 @@ public class StorageService {
                 articleStorage.values().stream()
         ).collect(Collectors.toList());
     }
+      //***ПУНКТ 2.1 нового задания****
+      //***Метод для поиска продукта по ID
+      public Optional<Product> getProductById(UUID id) {
+          return Optional.ofNullable(productStorage.get(id));
+      }
+
 }

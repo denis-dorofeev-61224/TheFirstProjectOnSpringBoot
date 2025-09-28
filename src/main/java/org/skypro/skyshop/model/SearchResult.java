@@ -12,7 +12,7 @@ public class SearchResult {
     private final String contentType;
 
     // Конструктор
-    public SearchResult(String id, String name, String contentType) {
+    private SearchResult(String id, String name, String contentType) {
         this.id = id;
         this.name = name;
         this.contentType = contentType;
